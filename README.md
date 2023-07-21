@@ -13,6 +13,7 @@
       - Did not achive
 - [x] Clusters should be configured to run in clustered mode  
       - Number of nodegroups has to be at least 2 [num_node_groups](https://github.com/sd-public/redis-tf-module/blob/5ed4d77b5bfcbb561c8143b3a33d204cfc81ee56/main.tf#L18)
+      - It defaults to [2](https://github.com/sd-public/redis-tf-module/blob/5ed4d77b5bfcbb561c8143b3a33d204cfc81ee56/variables.tf#L36)
 - [x] “maxmemory-policy” redis parameter should be set to “allKeys-lru”  
       - Achieved with [aws_elasticache_parameter_group](https://github.com/sd-public/redis-tf-module/blob/5ed4d77b5bfcbb561c8143b3a33d204cfc81ee56/main.tf#L1)
 
