@@ -17,7 +17,18 @@
 - [x] “maxmemory-policy” redis parameter should be set to “allKeys-lru”  
       - Achieved with [aws_elasticache_parameter_group](https://github.com/sd-public/redis-tf-module/blob/5ed4d77b5bfcbb561c8143b3a33d204cfc81ee56/main.tf#L1)
 
+# usage
+1. Set up auth ( I was using `gimme-aws-creds` )
+2. Configure `profile` in `[dev|prod]/providers.tf`
+3. Run `make` targets
 
+## available targets
+
+`make plan-dev` <- terraform plan for dev
+`make provision-dev` <- terraform apply for dev
+`make plan-prod` <- terraform plan for prod
+`make provision-prod` <- terraform apply for prod
+`make clean` <- to remove terraform cache and state files
 
 ```
 ❯ make plan-dev
