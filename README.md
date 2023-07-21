@@ -24,11 +24,11 @@
 
 ## available targets
 
-`make plan-dev` <- terraform plan for dev
-`make provision-dev` <- terraform apply for dev
-`make plan-prod` <- terraform plan for prod
-`make provision-prod` <- terraform apply for prod
-`make clean` <- to remove terraform cache and state files
+`make plan-dev` <- terraform plan for dev  
+`make provision-dev` <- terraform apply for dev  
+`make plan-prod` <- terraform plan for prod  
+`make provision-prod` <- terraform apply for prod  
+`make clean` <- to remove terraform cache and state files  
 
 ```
 ❯ make plan-dev
