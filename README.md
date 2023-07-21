@@ -1,5 +1,7 @@
 # redis
 
+The module can be found in the other [repo](https://github.com/sd-public/redis-tf-module). It is versioned and the `source` is referencing that git tag.
+
 - [x] dev and prod configuration  
       - Please see `[dev|prod]/terraform.tfvars` [DEV](https://github.com/sd-public/redis/blob/master/dev/terraform.tfvars) [PROD](https://github.com/sd-public/redis/blob/master/prod/terraform.tfvars)
 - [x] Clusters should be deployed to all available regions: `[us-east-2, eu-west-1, ap-east-1]`  
