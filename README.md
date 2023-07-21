@@ -2,7 +2,7 @@
 
 - [x] dev and prod configuration  
       - Please see `[dev|prod]/terraform.tfvars` [DEV](https://github.com/sd-public/redis/blob/master/dev/terraform.tfvars) [PROD](https://github.com/sd-public/redis/blob/master/prod/terraform.tfvars)
-- [x] Clusters should be deployed to all available regions: `[us-east-2, eu-west-1, ap-east-1]`
+- [x] Clusters should be deployed to all available regions: `[us-east-2, eu-west-1, ap-east-1]`  
       - Achieved using alias [providers](https://github.com/sd-public/redis-tf-module/blob/main/providers.tf) and configured in [L12](https://github.com/sd-public/redis-tf-module/blob/5ed4d77b5bfcbb561c8143b3a33d204cfc81ee56/main.tf#L12) [L38](https://github.com/sd-public/redis-tf-module/blob/5ed4d77b5bfcbb561c8143b3a33d204cfc81ee56/main.tf#L38) [L56](https://github.com/sd-public/redis-tf-module/blob/5ed4d77b5bfcbb561c8143b3a33d204cfc81ee56/main.tf#L56)
 - [x] Encryption must be enabled for all data at rest and in-transit  
       - [at_rest_encryption_enabled](https://github.com/sd-public/redis-tf-module/blob/5ed4d77b5bfcbb561c8143b3a33d204cfc81ee56/main.tf#L20)  
